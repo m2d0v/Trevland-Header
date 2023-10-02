@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title></title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__logo">Trevland</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li><a href="#top">Home</a></li>
+							<li><a href="#location">Location</a></li>
+							<li><a href="#offer">Offers</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#footer">Contact</a></li>
+						</ul>
+					</nav>
+					<button class="header__button">Booking now</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="first">
+				<div class="container">
+					<div class="first__body">
+						<h1 class="first__title">Railtrips To Here, <br> There And Everywhere!</h1>
+						<p class="first__subtitle">We all wish to start our year the best way possible and <br> also according to a
+							common belief if you have a great <br> start to your.</p>
+						<button class="first__button">Explore more</button>
+					</div>
+				</div>
+			</section>
+			<section class="location" id="location">
+				<div class="container">
+					<h2 class="location__title">Popular Location</h2>
+					<p class="location__subtitle">
+						For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and <br> voyagers—
+						from island hopping in the
+					</p>
+					<div class="location__cards">
+						<div class="location__card">
+							<div class="location__card-img"><img src="img/lcard_1.jpg" alt=""></div>
+							<h3 class="location__card-title">Istanbul, Turkey</h3>
+							<p class="location__card-subtitle">Istanbul is a major city in Turkey that <br> straddles Europe.</p>
+						</div>
+						<div class="location__card">
+							<div class="location__card-img"><img src="img/lcard_2.jpg" alt=""></div>
+							<h3 class="location__card-title">Kuala Lumpur, malaysia</h3>
+							<p class="location__card-subtitle">A 272-step long trek leads you to <br> this century.</p>
+						</div>
+						<div class="location__card">
+							<div class="location__card-img"><img src="img/lcard_3.jpg" alt=""></div>
+							<h3 class="location__card-title">Seoul, South Korea</h3>
+							<p class="location__card-subtitle">South Korea officially the Republic of <br> Korea is a country in East
+								Asia.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="warning">
+				<p>Davomi o'chirilgan! Faqat headerni ishlashini ko'rsatish uchun qo'yildi.</p>
+			</section>
+	</div>
+	<script>
+		window.addEventListener("scroll", function () {
+			let header = document.querySelector("header");
+			header.classList.toggle("sticky1", window.scrollY > 0);
+			header.classList.toggle("sticky2", window.scrollY > innerHeight - 50);
+		})
+	</script>
+</body>
+
+</html>
